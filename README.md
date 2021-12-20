@@ -121,13 +121,13 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+<!-- ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 
 
@@ -137,6 +137,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Organizations should be able to use Blockchain smart contracts for generating carbon credit certificates
 - [x] Vetting agencies should be able to view of the carbon credit certificates possessed by each organization
 - [ ] Organizations should be able to share their certificates with other organizations through the blockchain to fulfil their carbon credit requirements
+- [ ] Automate carbon credit consumptions on the basis of product other
+- [ ] Implementing on Ethereum Blockchain
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
