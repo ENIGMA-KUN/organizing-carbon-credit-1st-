@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Crown-Monkey/organizing-carbon-credit-1st-">
-    <img src="[img]https://i.imgur.com/Z5VydRU.png[/img]" alt="Logo" width="80" height="80">
+    <img src="https://i.imgur.com/Z5VydRU.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Techathon 2</h3>
