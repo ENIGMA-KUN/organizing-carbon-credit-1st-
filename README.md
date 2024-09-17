@@ -1,219 +1,97 @@
-# Transparency in Carbon Credits - Crown Monkey
-<div id="top"></div>
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Crown-Monkey/organizing-carbon-credit-1st-">
-    <img src="https://i.imgur.com/Z5VydRU.png" alt="Logo" width="80" height="80">
-  </a>
-  <img src="https://i.imgur.com/3hRq1ms.png" alt="Logo" width="80" height="80">
 
-  <h3 align="center">Techathon 2</h3>
+<img src="https://imagizer.imageshack.com/img923/779/V3hpmo.png"/>
+<!-- <div align = center>
 
-  <p align="center">
-    Challenge 4: Can you bring transparency in carbon credits?
-    <br />
-    <a href="https://www.ey.com/en_in/techathon-ii/challenge-4-can-you-bring-transparency-in-carbon-credits"><strong>EY Techathon Link »</strong></a>
 
 
+<!-- **[<kbd> <br> :rocket: Install <br> </kbd>][Installation]** 
+**[<kbd> <br> 📘 Documentation <br> </kbd>][Documentation]** 
+**[<kbd> <br> 🕹 Features <br> </kbd>][Features]** 
+**[<kbd> <br> 💙 Contribute <br> </kbd>][Contribution]**  
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Problem Statements</a></li>
-        <li><a href="#built-with">Solutions</a></li>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Project Features</a></li>
-      </ul>
-    </li>
-    <!-- <li><a href="#usage">Usage</a></li> -->
-    <li><a href="#roadmap">Roadmap</a></li>
-    <!-- <li><a href="#contributing">Contributing</a></li> -->
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
-  </ol>
-</details>
+---
+</div> --> 
 
+# Transparency in Carbon Credit using Blockchain
 
+## About
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+Creating a secure execution environment which can execute go programs by taking input data , perform the execution of the program, generate output / make state changes.(Secure Smart Contract execution environment)
 
-### PROBLEM STATEMENT:
 
-[![Product Name Screen Shot][product-screenshot]](crown-monkey.com)
+## Objectives
 
-Sustainability is the most important word in today’s world, so is there any way to make the world greener. Carbon emissions is the talk of the town today with every countries trying to build a way of emitting less carbons in the near future. As every country is allowed to emit certain tonnes of carbon hence carbon credit becomes more important. As some countries still don’t follow their maximum cap of emitting carbon, here comes the role of bringing transparency in carbon credits so as to ensure the countries emitting less than their maximum cap of credits should be able to trade it. But as the developed countries have more emission levels so they try to manipulate with the data hence bringing unreliability to the carbon credits. So how can we bring a system that is transparent and can calculate the carbon credits in an automated way and can maintain with Paris Climate Agreement Goal of offsetting carbon?
+1. Configure and set up a secured smart contract environment where organization can join  and manage and view data. 
+2. The participating organizations should be able to record their day-to-day transactions which will be directly coming from MQ-135 sensors. 
+3. The application would be capable of calculating carbon credit in a parameterized and configurable manner through Global warming potential.
+4. The platform would be able to integrate with core systems considering real world scenarios.
+5. Organizations would be able to view the carbon transactions and the updated wallet.
+6. The solution should maintain privacy in the system with proper access control mechanisms.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
+## Proposed System
 
-### SOLUTION 
+<img src="https://imagizer.imageshack.com/img924/5738/feFv5X.png"/>
 
-A carbon credit is a generic term for any tradable certificate or permit representing the right to emit one tonne of carbon dioxide or the equivalent amount of a different greenhouse gas. In other words, it is the permit that each country or company has to emit the given amount of greenhouse gases. In today’s world removal of carbon has become a necessity so, we will try to achieve it by proper management of carbon. Right now calculation is done through gathering of manual data but it is not trustworthy and can be tampered so here the comes the role of Blockchain. Here we will try to create a blockchain platform which will allow high emitting organizations to monitor their carbon footprints and meet their quotas by buying carbon credits from low emitters. Therefore, it will create transparency in the system and make it easier to track and report reduction emissions. In climate policy making, transparent measurement, reporting and verification of climate action is important. It enables policymakers to understand where they need to incentivize greenhouse gas emission reductions while being confident that they comply with the requirements set in its standards. ​
+1. Organizations will be able to sign up securely and two contracts will be available. First is the Organization factory where the features and information of ledger will be available and second will be the new organization contract where new org will be able to join through smart contract. 
 
+2. After successful sign-in, the organizations will be redirected to the dashboard and through MQ-135 sensors the data entry will be automatically done for the various gases. After the process of data entry, organizations will be able to approve the automated data through sensors  and then the carbon credit calculation will take place through the algorithm which uses Global Warming potential. Thereafter the transaction sheet will be updated.
 
+3. Through the wallet option on the dashboard, one can see the organization id and contract id through which the organizations will be connected. We can also view the credit allotted, credit used and available credit option.
 
-### Built With
+4. After the completion of the process, we will be able to view all the updated information on the dashboard.
 
-The main frameworks we will be using are:
 
-* [React.js](https://reactjs.org/)
-* [Node.js](https://nodejs.org/en/)
-* [MongoDB](https://www.mongodb.com/)
-* [Blockchain](https://ethereum.org/en/) - Work under process
 
 
 
+## Methodology
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+1. Blockchain: It is a shared and immutable way of storing transactions that provides transparency of data by sharing data to all nodes in the network.
+2. Interface:  It mainly constitutes of the dashboard, wallet section and transaction section. The process of sign-in to automatic redirected data will be visible on dashboard. Through transaction page we will be able to get to know the approved transactions from the organizations and the information on the credits can be seen under wallet section.
+3. Sensor: For detecting Co2 gas we are using MQ135 co2 sensor with a measuring range 0~1000ppm.
+4. Data Management and Calculation: This data coming from the sensor is stored and pushed into the Blockchain ledger on a daily basis. These sensors are fixed in all the major hot spots where GHG gas is produced and store the data from all sensors in one place. Similarly, concentration of all other major GHG gas (N2O, CH4, HFC, PFC,SF6) is calculated. 
 
 
 
-<!-- GETTING STARTED -->
-## PROJECT FEATURES - EY Expected Outputs & Constructions
 
-### Configure and set up a network where multiple organizations, industry partners and vetting agencies can join and perform their data gathering transactions
 
-<p align="center"><img width="500px" src="https://i.imgur.com/5sqZQgJ.png"></p>
+## Features & Interfaces
 
-### The participating industries should be able to record their day-to-day transactions and vetting agencies should be able to transparently review them
+### Organization Interface
 
-<p align="center"><img width="500px" src="https://i.imgur.com/kuCjaE0.png"></p>
+<img src="https://imagizer.imageshack.com/img924/5806/fja4Xo.jpg"/>
 
-### The application should be capable calculating carbon credit in a parameterized and configurable manner
+### Emission Data Entry
 
-<p align="center"><img width="500px" src="https://i.imgur.com/gJ9SYs0.png"></p>
+<img src="https://imagizer.imageshack.com/img924/2142/Ksulxw.jpg"/>
 
+### Wallet 
 
+<img src="https://imagizer.imageshack.com/img922/3689/6pO6Pf.jpg"/>
 
+### Sensors
 
+<img src="https://imagizer.imageshack.com/img922/4286/oXqt2G.jpg">
 
-<!-- ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+---
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
-<p align="right">(<a href="#top">back to top</a>)</p> -->
 
+## Conclusions
 
+1. While developing or building this model we have come to the conclusion that with growing consciousness among nations to limit industrial  GHG pollution together with positive industrial growth, the emission touting appears to be the chief area of business attraction today.
+2. Here we have tried to create a Blockchain platform that will allow high-emitting organizations to detect their carbon footprints and mingle their quotas by acquiring carbon credits from low emitters.
+3. The setup spot for CO2 sensors has been made in such a way that it should follow up the law made up by the government organizations to achieve the purpose of giving accurate and errorless values of the liberated CO2 gas.
 
-<!-- USAGE EXAMPLES -->
-<!-- ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## Future Scope
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Currently we are calculating carbon credit only for scope 1 where we calculate for gases but in future we will try to add scope 2 and 3 to get exact measure and data of the organizations emitting carbon credits. 
+2. We will add the option of vetting agencies where they will be able to view the transaction of the organizations.
 
-<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 
+<!------- { Summary } ------>
 
-<!-- ROADMAP -->
-## Roadmap - FEEDBACK WORKING ON
-
-- [x] Organizations should be able to use Blockchain smart contracts for generating carbon credit certificates
-- [x] Vetting agencies should be able to view of the carbon credit certificates possessed by each organization
-- [ ] Organizations should be able to share their certificates with other organizations through the blockchain to fulfil their carbon credit requirements
-- [ ] Automate carbon credit consumptions on the basis of product other
-- [ ] Implementing on Ethereum Blockchain
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-<!-- ## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Crown Monkey - [Website](https://crown-monkey.com/) - crown2monkey@gmail.com
-
-Project Link: [https://github.com/Crown-Monkey/organizing-carbon-credit-1st-](https://github.com/Crown-Monkey/organizing-carbon-credit-1st-)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555 -->
-<!-- [linkedin-url]: https://linkedin.com/in/othneildrew -->
-[product-screenshot]: https://i.imgur.com/HipUfRs.png
